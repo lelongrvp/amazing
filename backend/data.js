@@ -1,0 +1,282 @@
+import bcrypt from 'bcryptjs';
+
+const data = {
+    users: [
+        {
+            name: 'Long',
+            email: 'lelongrvp7@gmail.com',
+            password: bcrypt.hashSync('1234567', 8),
+            isAdmin: true,
+            seller:{
+                name: 'poochswadge',
+                logo: '/images/logo1.jpg',
+                description: 'best seller',
+                rating: 4,
+                numReviews: 1231,
+            }
+        },
+        {
+            name: 'Dung',
+            email: 'lelongcruyff1@gmail.com',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: false,
+        },
+    ],
+    products:[
+        {
+            name:'PlayStation 5',
+            category:'Console',
+            image:'/images/p1.jpg',
+            price: 499,
+            countInStock: 10,
+            brand:'Sony',
+            rating: 5,
+            numReviews: 11386,
+            description:'high quality product',
+        },
+    
+        {
+            name:'Xbox Series X',
+            category:'Console',
+            image:'/images/p2.jpg',
+            price: 499,
+            countInStock: 100,
+            brand:'Microsoft',
+            rating: 4.5,
+            numReviews: 5454,
+            description:'high quality product',
+        },
+    
+        {
+            name:'Nintendo Switch',
+            category:'Console',
+            image:'/images/p3.jpg',
+            price: 369,
+            countInStock: 102,
+            brand:'Sony',
+            rating: 5,
+            numReviews: 65625,
+            description:'high quality product',
+        },
+    
+        {
+            name:'MSI MEG Trident X 10SD-864US SFF',
+            category:'PC',
+            image:'/images/p4.jpg',
+            price: 2487.46,
+            countInStock: 310,
+            brand:'MSI',
+            rating: 4.6,
+            numReviews: 40,
+            description:'high quality product',
+        },
+    
+        {
+            name:'Cyberpunk 2077 - PlayStation 4',
+            category:'Video Game',
+            image:'/images/p5.jpg',
+            price: 59.99,
+            countInStock: 0,
+            brand:'CD Projekt RED',
+            rating: 4,
+            numReviews: 1270,
+            description:'high quality product',
+        },
+    
+        {
+            name:'Samsung Galaxy S21 Ultra',
+            category:'Electronic',
+            image:'/images/p6.jpg',
+            price: 1349,
+            countInStock: 100,
+            brand:'SAMSUNG',
+            rating: 5,
+            numReviews: 1,
+            description:'high quality product',
+        },
+
+        {
+            name:'Assassin’s Creed Valhalla Standard Edition',
+            category:'Video Games',
+            image:'/images/p7.jpg',
+            price: 59.99,
+            countInStock: 275,
+            brand:'Ubisoft',
+            rating: 4.5,
+            numReviews: 7493,
+            description:'high quality product',
+        },
+
+        {
+            name:`The Last of Us Part II Collector's Edition`,
+            category:'Video Games',
+            image:'/images/p8.jpg',
+            price: 179.99,
+            countInStock: 26,
+            brand:'PlayStation',
+            rating: 4,
+            numReviews: 1122,
+            description:'high quality product',
+        },
+
+        {
+            name: `Marvel's Avengers for PlayStation 4`,
+            category: 'Video Games',
+            image: '/images/p9.jpg',
+            price: 59.99,
+            countInStock: 100,
+            brand:'Square Enix',
+            rating: 4.5,
+            numReviews: 5706,
+            description:'high quality product',
+        },
+
+        {
+            name:'The Legend of Zelda: Breath of the Wild',
+            category:'Video Games',
+            image:'/images/p10.jpg',
+            price: 59.99,
+            countInStock: 3,
+            brand:'Nintendo',
+            rating: 5,
+            numReviews: 32911,
+            description:'high quality product',
+        },
+
+        {
+            name:`Marvel's Spider-Man: Miles Morales`,
+            category:'Video Games',
+            image:'/images/p11.jpg',
+            price: 49.88,
+            countInStock: 153,
+            brand:'PlayStation',
+            rating: 5,
+            numReviews: 10690,
+            description:'high quality product',
+        },
+
+        {
+            name:'Oculus Rift S PC-Powered VR Gaming Headset',
+            category:'Video Games',
+            image:'/images/p12.jpg',
+            price: 299.00,
+            countInStock: 25,
+            brand:'Oculus',
+            rating: 4.5,
+            numReviews: 14465,
+            description:'high quality product',
+        },
+
+        {
+            name:'Razer DeathAdder V2 Gaming Mouse',
+            category:'Video Games',
+            image:'/images/p13.jpg',
+            price: 69.99,
+            countInStock: 1098,
+            brand:'Razer',
+            rating: 4.5,
+            numReviews: 22094,
+            description:'high quality product',
+        },
+
+        {
+            name:'HyperX Cloud II - Gaming Headset',
+            category:'Video Games',
+            image:'/images/p14.jpg',
+            price: 85.51,
+            countInStock: 10,
+            brand:'HyperX',
+            rating: 4.5,
+            numReviews: 32891,
+            description:'high quality product',
+        },
+
+        {
+            name:'Monster Hunter Rise - Nintendo Switch',
+            category:'Video Games',
+            image:'/images/p15.jpg',
+            price: 59.99,
+            countInStock: 0,
+            brand:'Capcom',
+            rating: 0,
+            numReviews: 0,
+            description:'high quality product',
+        },
+
+        {
+            name:'Apple iPhone 12 mini',
+            category:'Electronics',
+            image:'/images/p16.jpg',
+            price: '0',
+            countInStock: 0,
+            brand:'Apple',
+            rating: 0,
+            numReviews: 0,
+            description:'high quality product',
+        },
+
+        {
+            name:'Acer Predator Helios 300 Gaming Laptop',
+            category:'Electronics',
+            image:'/images/p17.jpg',
+            price: 1356.00,
+            countInStock: 1,
+            brand:'Acer',
+            rating: 4.5,
+            numReviews: 2531,
+            description:'high quality product',
+        },
+
+        {
+            name:'ROG Strix GL10DH Gaming Desktop PC',
+            category:'Electronics',
+            image:'/images/p18.jpg',
+            price: 1449.97,
+            countInStock: 2,
+            brand:'ASUS',
+            rating: 4,
+            numReviews: 384,
+            description:'high quality product',
+        },
+
+        {
+            name:'ROG Strix GL10DH Gaming Desktop PC',
+            category:'Electronics',
+            image:'/images/p19.jpg',
+            price: 1699.00,
+            countInStock: 3,
+            brand:'ASUS',
+            rating: 4,
+            numReviews: 62,
+            description:'high quality product',
+        },
+
+        {
+            name:'ROG Strix G35 Gaming Desktop PC',
+            category:'Electronics',
+            image:'/images/p20.jpg',
+            price: 5999.99,
+            countInStock: 1,
+            brand:'Nintendo',
+            rating: 4.5,
+            numReviews: 15,
+            description:'high quality product',
+        },
+
+        {
+            name:'DEATH STRANDING - PS4',
+            category:'Video Games',
+            image:'/images/p21.jpg',
+            price: 29.85,
+            countInStock: 231,
+            brand:'PlayStation',
+            rating: 4.5,
+            numReviews: 1893,
+            description:'high quality product',
+        },
+
+
+    ],
+};
+
+export default data;
