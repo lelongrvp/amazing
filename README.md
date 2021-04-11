@@ -2,15 +2,14 @@
 
 ## Demo Website
 
-- 👉 Heroku : [https://newamazona-final.herokuapp.com](https://newamazona-final.herokuapp.com)
-- 👉 AWS : [https://amazona.webacademy.pro](https://amazona.webacademy.pro)
+- 👉 Heroku : [https://poochswadge-amazing.herokuapp.com/]
 
 ## Run Locally
 
 ### 1. Clone repo
 
 ```
-$ git clone git@github.com:basir/amazona.git
+$ git clone git@github.com:lelongrvp/amazing.git
 $ cd amazona
 ```
 
@@ -19,7 +18,7 @@ $ cd amazona
 - Local MongoDB
   - Install it from [here](https://www.mongodb.com/try/download/community)
   - Create .env file in root folder
-  - Set MONGODB_URL=mongodb://localhost/amazona  
+  - Set MONGODB_URL=mongodb://localhost/amazing  
 - Atlas Cloud MongoDB
   - Create database at [https://cloud.mongodb.com](https://cloud.mongodb.com)
   - Create .env file in root folder
@@ -52,11 +51,6 @@ $ npm start
 
 - Run http://localhost:3000/signin
 - Enter admin email and password and click signin
-
-## Support
-
-- Q/A: https://webacademy.pro/amazona
-- Contact Instructor: [Basir](mailto:basir.jafarzadeh@gmail.com)
 
 ## Progress:
 2. Install Tools
